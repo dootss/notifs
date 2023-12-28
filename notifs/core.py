@@ -16,4 +16,5 @@ COLORS = {
 
 def warn(text, symbol='!', color='red'):
     color_code = COLORS.get(color.lower(), Fore.WHITE)
-    print(f"{color_code}[{symbol}]{Style.RESET_ALL} {text}")
+    # TODO not depend on colorama, instead use ANSI escape codes
+    print(f"[{color_code}{symbol}{Style.RESET_ALL}] {text}")
