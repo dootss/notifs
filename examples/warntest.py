@@ -1,2 +1,2 @@
 import notifs
-notifs.warn("hello!")
+notifs.notif("hello!")
