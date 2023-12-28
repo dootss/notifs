@@ -32,7 +32,7 @@ def notif(text, symbol='!', color='yellow', style='symbol'):
     color_code = SUPPORTED_COLORS[color]
 
     if style   == 'full':
-        message = f"[{color_code}{symbol}] {text}{Style.RESET_ALL}"
+        message = f"{color_code}[{symbol}] {text}{Style.RESET_ALL}"
     elif style == 'partial':
         message = f"{color_code}[{symbol}]{Style.RESET_ALL} {text}"
     elif style == 'symbol':
