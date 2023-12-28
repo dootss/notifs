@@ -1,17 +1,14 @@
-from colorama import Fore, Style, init
-
-
-init(autoreset=True)
-
 SUPPORTED_COLORS = {
-    'red'     : Fore.RED,
-    'green'   : Fore.GREEN,
-    'yellow'  : Fore.YELLOW,
-    'blue'    : Fore.BLUE,
-    'magenta' : Fore.MAGENTA,
-    'cyan'    : Fore.CYAN,
-    'white'   : Fore.WHITE,
+    'red'     : '\033[31m',
+    'green'   : '\033[32m',
+    'yellow'  : '\033[33m',
+    'blue'    : '\033[34m',
+    'magenta' : '\033[35m',
+    'cyan'    : '\033[36m',
+    'white'   : '\033[37m',
 }
+
+RESET = "\033[0m"
 
 def get_supported_colors():
     """Return a list of supported color names."""
@@ -32,11 +29,11 @@ def notif(text, symbol='!', color='yellow', style='symbol'):
     color_code = SUPPORTED_COLORS[color]
 
     if style   == 'full':
-        message = f"{color_code}[{symbol}] {text}{Style.RESET_ALL}"
+        message = f"{color_code}[{symbol}] {text}{RESET}"
     elif style == 'partial':
-        message = f"{color_code}[{symbol}]{Style.RESET_ALL} {text}"
+        message = f"{color_code}[{symbol}]{RESET} {text}{RESET}"
     elif style == 'symbol':
-        message = f"[{color_code}{symbol}{Style.RESET_ALL}] {text}"
+        message = f"[{color_code}{symbol}{RESET}] {text}{RESET}"
     else:
         # fake list to look like the invalid color valueError
         raise ValueError("Invalid style. Supported styles are: ['full', 'partial', 'symbol']")
