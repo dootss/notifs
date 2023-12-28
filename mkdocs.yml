@@ -11,5 +11,14 @@ theme:
     primary: indigo  # Choose the primary color
     accent: indigo   # Choose the accent color
   features:
-    - navigation.tabs    # Optional: Enable navigation tabs
-    - navigation.instant # Optional: Enable instant loading
+    - navigation.tabs    # Enable navigation tabs
+    - navigation.instant # Enable instant loading
+# syntax highlighting!!!
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
