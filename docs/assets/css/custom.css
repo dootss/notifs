@@ -1,0 +1,30 @@
+/* Jupyter Notebook Output Cells */
+.jp-OutputArea {
+  background-color: #263238; /* Slightly darker to distinguish from main content */
+  color: #ECEFF1; /* Light text for readability */
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-bottom: 16px; /* Space below output cells */
+  border-left: 4px solid #2196F3; /* Accent color to indicate output cells */
+}
+
+/* Jupyter Notebook Code Cells */
+.jp-InputArea {
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-bottom: 4px; /* Space between code cells and output */
+}
+
+/* Style for code blocks */
+.md-typeset pre {
+  border-radius: 4px;
+  padding: 16px; /* Padding inside code blocks */
+  overflow-x: auto;
+}
+
+/* Style for inline code */
+.md-typeset code {
+  color: #ECEFF1;
+  border-radius: 4px;
+  padding: 2px 6px;
+}

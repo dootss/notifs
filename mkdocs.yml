@@ -2,8 +2,9 @@ site_name: Notifs Documentation
 nav:
   - Home: index.md
   - Installation: installation.md
-  - Usage: usage.md
+  - Usage: usage.ipynb
   - API Reference: api_reference.md
+
 theme:
   name: material
   palette:
@@ -22,3 +23,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+plugins:
+  - mkdocs-jupyter:
+      execute: true
+extra_css:
+  - assets/css/custom.css
