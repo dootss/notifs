@@ -16,10 +16,19 @@ notif("symbol >, color green, style full.", symbol='>', color='green', style='fu
 notif("symbol >>, color magenta, style partial.", symbol='>>', color='magenta', style='partial')
 
 # Symbol style (default) with custom color and symbol
-notif("symbol !, color cyan, style symbol.", symbol='!', color='cyan', style='symbol')
+# and a prettier way of formatting it
+notif(
+    "symbol !, color cyan, style symbol.",
+    symbol='!',
+    color='cyan',
+    style='symbol'
+    )
 
 # Missing style (defaults to symbol style)
 notif("symbol @, color red, missing style.", symbol='@', color='red')
+
+# funny symbol demo
+notif("anything you want", symbol="you can set the symbol to")
 
 # Invalid color, should raise ValueError
 try:

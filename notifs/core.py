@@ -38,6 +38,7 @@ def notif(text, symbol='!', color='yellow', style='symbol'):
     elif style == 'symbol':
         message = f"[{color_code}{symbol}{Style.RESET_ALL}] {text}"
     else:
-        raise ValueError("Invalid style. Supported styles are: 'full', 'partial', 'symbol'.")
+        # fake list to look like the invalid color valueError
+        raise ValueError("Invalid style. Supported styles are: ['full', 'partial', 'symbol']")
 
     print(message)
