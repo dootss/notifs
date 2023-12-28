@@ -1,11 +1,13 @@
 # Welcome to Notifs Documentation
 
-Notifs is a Python module designed to make terminal notifications easy and customizable.
+Notifs aims to make pretty terminal-based notifications easy
 
 Explore the following sections to get started:
 
-- [Installation](installation.md)
+- [Installation](installation)
 
-- [Usage](usage.md)
+- [Usage](usage)
 
-- [API Reference](api_reference.md)
+- [API Reference](api_reference)
+
+- [Examples](examples)

@@ -1,9 +1,13 @@
 site_name: Notifs Documentation
+site_url: https://dootss.github.io/notifs
+repo_url: https://github.com/dootss/notifs
+site_description: A library for easy terminal notifications.
 nav:
   - Home: index.md
   - Installation: installation.md
   - Usage: usage.ipynb
-  - API Reference: api_reference.md
+  - API Reference: api_reference.ipynb
+  - Examples: examples.ipynb
 
 theme:
   name: material
@@ -28,3 +32,8 @@ plugins:
       execute: true
 extra_css:
   - assets/css/custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dootss
