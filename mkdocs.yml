@@ -1,0 +1,15 @@
+site_name: Notifs Documentation
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - API Reference: api_reference.md
+theme:
+  name: material
+  palette:
+    scheme: slate    # Use a dark theme by default
+    primary: indigo  # Choose the primary color
+    accent: indigo   # Choose the accent color
+  features:
+    - navigation.tabs    # Optional: Enable navigation tabs
+    - navigation.instant # Optional: Enable instant loading
