@@ -1,1 +1,1 @@
-from .core import warn
+from .core import notif
